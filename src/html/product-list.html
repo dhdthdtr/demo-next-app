@@ -1,0 +1,2094 @@
+<!doctype html>
+
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>AURA International — Multi-Language Product Showcase</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Noto+Sans:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @layer base {
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        body {
+          overscroll-behavior: none;
+        }
+        main > :first-child {
+          margin-top: 0 !important;
+        }
+        main > :last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary": "#003824",
+              "primary-fixed-dim": "#c3c0ff",
+              "primary-fixed": "#e2dfff",
+              "surface-container-highest": "#2d3449",
+              "on-secondary": "#003640",
+              "tertiary-fixed-dim": "#4edea3",
+              primary: "#c3c0ff",
+              tertiary: "#4edea3",
+              "on-error": "#690005",
+              surface: "#0b1326",
+              "error-container": "#93000a",
+              "on-primary": "#1d00a5",
+              secondary: "#4cd7f6",
+              "on-tertiary-fixed": "#002113",
+              "secondary-fixed": "#acedff",
+              "tertiary-fixed": "#6ffbbe",
+              "surface-bright": "#31394d",
+              outline: "#918fa1",
+              "on-surface-variant": "#c7c4d8",
+              "on-secondary-fixed-variant": "#004e5c",
+              "inverse-primary": "#4d44e3",
+              "secondary-container": "#03b5d3",
+              "inverse-surface": "#dae2fd",
+              background: "#0b1326",
+              error: "#ffb4ab",
+              "outline-variant": "#464555",
+              "on-primary-container": "#dad7ff",
+              "inverse-on-surface": "#283044",
+              "primary-container": "#4f46e5",
+              "on-background": "#dae2fd",
+              "surface-tint": "#c3c0ff",
+              "on-tertiary-fixed-variant": "#005236",
+              "on-tertiary-container": "#67f4b7",
+              "surface-container-lowest": "#060e20",
+              "on-primary-fixed": "#0f0069",
+              "on-secondary-container": "#00424e",
+              "tertiary-container": "#006e4b",
+              "on-secondary-fixed": "#001f26",
+              "secondary-fixed-dim": "#4cd7f6",
+              "on-error-container": "#ffdad6",
+              "surface-container-high": "#222a3d",
+              "on-primary-fixed-variant": "#3323cc",
+              "on-surface": "#dae2fd",
+              "surface-variant": "#2d3449",
+              "surface-container-low": "#131b2e",
+              "surface-container": "#171f33",
+              "surface-dim": "#0b1326",
+            },
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
+            },
+            spacing: {
+              "gutter-mobile": "1rem",
+              "space-xs": "0.25rem",
+              margin: "3rem",
+              "space-xl": "2.5rem",
+              "space-sm": "0.5rem",
+              gutter: "1.5rem",
+              "space-md": "1rem",
+              "margin-mobile": "1.25rem",
+              "space-lg": "1.5rem",
+            },
+            fontFamily: {
+              "label-md": ["Noto Sans"],
+              "headline-sm": ["Plus Jakarta Sans"],
+              "label-sm": ["Noto Sans"],
+              "headline-lg-mobile": ["Plus Jakarta Sans"],
+              "headline-lg": ["Plus Jakarta Sans"],
+              "body-lg": ["Inter"],
+              "display-hero": ["Plus Jakarta Sans"],
+              "body-sm": ["Inter"],
+              "label-lg": ["Noto Sans"],
+              "body-md": ["Inter"],
+              "headline-md": ["Plus Jakarta Sans"],
+              "display-hero-mobile": ["Plus Jakarta Sans"],
+            },
+            fontSize: {
+              "label-md": [
+                "12px",
+                {
+                  lineHeight: "16px",
+                  letterSpacing: "0.04em",
+                  fontWeight: "500",
+                },
+              ],
+              "headline-sm": [
+                "20px",
+                {
+                  lineHeight: "28px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "500",
+                },
+              ],
+              "label-sm": [
+                "10px",
+                {
+                  lineHeight: "14px",
+                  letterSpacing: "0.06em",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-lg-mobile": [
+                "28px",
+                {
+                  lineHeight: "36px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-lg": [
+                "40px",
+                {
+                  lineHeight: "48px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "600",
+                },
+              ],
+              "body-lg": [
+                "18px",
+                {
+                  lineHeight: "28px",
+                  letterSpacing: "-0.005em",
+                  fontWeight: "400",
+                },
+              ],
+              "display-hero": [
+                "56px",
+                {
+                  lineHeight: "64px",
+                  letterSpacing: "-0.03em",
+                  fontWeight: "600",
+                },
+              ],
+              "body-sm": [
+                "13px",
+                {
+                  lineHeight: "20px",
+                  letterSpacing: "0.005em",
+                  fontWeight: "400",
+                },
+              ],
+              "label-lg": [
+                "14px",
+                {
+                  lineHeight: "20px",
+                  letterSpacing: "0.02em",
+                  fontWeight: "500",
+                },
+              ],
+              "body-md": [
+                "15px",
+                { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" },
+              ],
+              "headline-md": [
+                "24px",
+                {
+                  lineHeight: "32px",
+                  letterSpacing: "-0.015em",
+                  fontWeight: "500",
+                },
+              ],
+              "display-hero-mobile": [
+                "36px",
+                {
+                  lineHeight: "44px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "600",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-background font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary-container"
+  >
+    <header
+      class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"
+    >
+      <div
+        class="bg-surface-container-lowest/90 px-gutter-mobile md:px-margin py-space-xs flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant"
+      >
+        <div class="flex items-center gap-space-sm mx-auto md:mx-0">
+          <span class="flex h-2 w-2 relative"
+            ><span
+              class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"
+            ></span
+            ><span
+              class="relative inline-flex rounded-full h-2 w-2 bg-tertiary"
+            ></span></span
+          ><span
+            >🌐 Demo Mode: Real-time string rendering with 5 localized regions
+            &amp; instant currency conversion enabled</span
+          >
+        </div>
+        <div class="hidden md:flex items-center gap-space-md">
+          <span
+            class="text-tertiary flex items-center gap-space-xs font-label-sm text-label-sm"
+            ><span class="material-symbols-outlined text-label-md"
+              >check_circle</span
+            >
+            Verified Local Edition</span
+          ><span class="text-outline">|</span
+          ><span class="text-on-surface-variant font-label-sm text-label-sm"
+            >Latency: 14ms (Tokyo Edge)</span
+          >
+        </div>
+      </div>
+      <div
+        class="h-20 w-full px-gutter-mobile md:px-margin flex items-center justify-between gap-space-md"
+      >
+        <div class="flex items-center gap-space-lg">
+          <div class="flex items-center gap-space-sm">
+            <img
+              alt="AURA Global Logo"
+              class="h-8 w-auto object-contain"
+              src="https://lh3.googleusercontent.com/aida/AEtjO1XrdoPibmxagOBilta1p8bUqREQhjy5V87aN5Bb2Ax9CGUFxWbbuwr_2cBiR_Sw--iOSxjTRrXWs0azMToTliMuBSCOa7wiUhGp3unxiCCEy80AfvXinYtd6OeiWkR9hAxJQm5TOF95cQ4ncX1Ii1QaHGe7b7Sb3dFh9eZSIXGbr5hb_y04oOf3qwNUF9tB9oOdTCizyzcFQr5h4gZnx_xZ-dtorKkfSVOIGqwTIN5WHJxy-NIj3XHlFKDD"
+            />
+            <div class="flex flex-col">
+              <span
+                class="font-headline-sm text-headline-sm tracking-tight text-on-surface font-semibold"
+                >AURA</span
+              ><span
+                class="font-label-sm text-label-sm tracking-widest uppercase text-on-surface-variant"
+                >Global Intl</span
+              >
+            </div>
+          </div>
+          <div
+            class="hidden lg:flex items-center bg-surface-container-high rounded-full px-space-md py-space-xs gap-space-sm shadow-[0_1px_8px_rgba(0,0,0,0.04)]"
+          >
+            <div class="flex items-center gap-space-xs cursor-pointer">
+              <span class="text-body-md">🇺🇸</span
+              ><span class="font-label-md text-label-md text-on-surface"
+                >English (US)</span
+              ><span
+                class="material-symbols-outlined text-label-md text-outline"
+                >expand_more</span
+              >
+            </div>
+            <span class="text-outline-variant font-body-sm text-body-sm"
+              >/</span
+            >
+            <div
+              class="flex items-center gap-space-xs cursor-pointer font-label-md text-label-md text-secondary"
+            >
+              <span class="font-Noto Sans">USD $</span
+              ><span
+                class="material-symbols-outlined text-label-md text-outline"
+                >unfold_more</span
+              >
+            </div>
+            <div
+              class="flex items-center gap-space-xs bg-surface-container-highest px-space-sm py-0.5 rounded-full cursor-pointer"
+            >
+              <span
+                class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant"
+                >LTR</span
+              ><span
+                class="material-symbols-outlined text-label-sm text-outline"
+                >swap_horiz</span
+              >
+            </div>
+          </div>
+          <nav
+            class="hidden xl:flex items-center gap-space-sm"
+            data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-[0_0_20px_rgba(79,70,229,0.35)]"
+          >
+            <a
+              aria-current="page"
+              class="px-space-md py-space-sm transition-all bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-[0_0_20px_rgba(79,70,229,0.35)]"
+              data-path="catalog-showcase"
+              href="#"
+              >Catalog Showcase</a
+            ><a
+              class="px-space-md py-space-sm font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded-lg transition-all"
+              data-path="product-detail"
+              href="#"
+              >Product Detail</a
+            ><a
+              class="px-space-md py-space-sm font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded-lg transition-all"
+              data-path="regional-locale-admin"
+              href="#"
+              >Regional &amp; Locale Admin</a
+            >
+          </nav>
+        </div>
+        <div class="flex items-center gap-space-md">
+          <div
+            class="hidden sm:flex items-center bg-surface-container-lowest rounded-lg px-space-md py-space-xs gap-space-sm w-48 md:w-64"
+          >
+            <span
+              class="material-symbols-outlined text-on-surface-variant text-label-lg"
+              >search</span
+            ><input
+              class="bg-transparent w-full text-on-surface placeholder:text-outline focus:outline-none font-body-sm text-body-sm"
+              placeholder="Search SKU / 検索 / بحث..."
+              readonly=""
+              type="text"
+            />
+          </div>
+          <div
+            class="relative flex items-center justify-center cursor-pointer p-space-xs text-on-surface-variant hover:text-on-surface transition-colors"
+          >
+            <span class="material-symbols-outlined text-headline-sm"
+              >notifications</span
+            ><span
+              class="absolute -top-1 -right-1 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-space-xs rounded-full min-w-[1.125rem] text-center"
+              >3</span
+            >
+          </div>
+          <div class="flex items-center gap-space-sm pl-space-xs">
+            <div class="relative">
+              <img
+                alt="Profile"
+                class="w-8 h-8 rounded-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt4Zha9Baxtu72MXnbxU4KRBvN4k3ubQYvzbM33H6i65L5brUBO4Sa7F_DHGFMfAPYS1wtZtfcU2AsrggFemAU2yMa1202zLvlpnsltjZDaE7VoFFavPEo_jptxa-G0iP8IX_KgR_lFuq1kIldLQMa1KmCDojwD5iIb65MV1TkGoBH3CJxbOS0nuG7tVj41SkhAM6_UKokw3ZeVsMb6amCHMr2IPyB7_M0uV5fgTWNHHut8PCb7oXEWQ"
+              /><span
+                class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 bg-tertiary rounded-full ring-2 ring-surface"
+              ></span>
+            </div>
+            <div class="hidden md:flex flex-col">
+              <span
+                class="font-label-md text-label-md text-on-surface leading-tight"
+                >Elena Rostova</span
+              ><span
+                class="font-label-sm text-label-sm text-secondary tracking-wide"
+                >Lead Localizer</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="w-full pt-20 bg-background flex-1 flex flex-col">
+      <div class="flex flex-col w-full">
+        <!-- Top Global Telemetry Sub-ribbon -->
+        <section
+          class="w-full bg-surface-container-lowest px-gutter-mobile md:px-margin py-space-sm flex flex-wrap items-center justify-between gap-space-sm"
+        >
+          <div class="flex items-center gap-space-md">
+            <div
+              class="flex items-center gap-space-xs font-label-sm text-label-sm text-secondary"
+            >
+              <span class="material-symbols-outlined text-label-md"
+                >language_chinese_quick</span
+              >
+              <span>Unicode 15.1 Baseline Engine</span>
+            </div>
+            <span class="text-outline-variant font-label-sm text-label-sm"
+              >/</span
+            >
+            <div
+              class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant"
+            >
+              <span
+                class="inline-block w-1.5 h-1.5 rounded-full bg-tertiary"
+              ></span>
+              <span>RTL / BiDi Dynamic Flip: Ready (0ms shift)</span>
+            </div>
+          </div>
+          <div
+            class="flex items-center gap-space-lg font-label-sm text-label-sm text-outline"
+          >
+            <span class="hidden md:inline"
+              >Harmonized Currency Engine: 4 Markets Active</span
+            >
+            <div
+              class="flex items-center gap-space-xs bg-surface-container-high px-space-sm py-0.5 rounded-full text-on-surface font-label-sm text-label-sm"
+            >
+              <span
+                class="material-symbols-outlined text-label-sm text-tertiary"
+                >bolt</span
+              >
+              <span>CDN Edge Sync: 99.98%</span>
+            </div>
+          </div>
+        </section>
+        <!-- Hero Showcase Banner -->
+        <section
+          class="relative w-full px-gutter-mobile md:px-margin py-space-xl overflow-hidden bg-surface-container-low"
+        >
+          <div
+            class="absolute -top-32 -right-32 w-96 h-96 bg-primary-container/20 rounded-full blur-3xl pointer-events-none"
+          ></div>
+          <div
+            class="absolute top-1/2 -left-20 w-80 h-80 bg-secondary-container/15 rounded-full blur-3xl pointer-events-none"
+          ></div>
+          <div
+            class="relative z-10 max-w-7xl mx-auto flex flex-col gap-space-lg"
+          >
+            <div class="flex flex-col gap-space-xs">
+              <div
+                class="flex items-center gap-space-xs font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold"
+              >
+                <span class="material-symbols-outlined text-label-sm"
+                  >public</span
+                >
+                <span>AURA Polyglot Precision Hardware Catalog</span>
+              </div>
+              <h1
+                class="font-display-hero text-display-hero md:text-display-hero text-on-surface tracking-tight leading-none mt-space-xs"
+              >
+                Crafted for the Global Everyday
+              </h1>
+              <!-- Subtitles in Japanese and German with deliberate typographical alignment -->
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs max-w-4xl"
+              >
+                <div
+                  class="flex items-start gap-space-sm bg-surface-container/60 p-space-sm rounded-lg backdrop-blur-sm shadow-sm"
+                >
+                  <span
+                    class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container-highest text-secondary font-semibold"
+                    >JA-JP</span
+                  >
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant leading-snug"
+                  >
+                    世界中の日常を豊かにするデザイン。極限まで研ぎ澄まされた音響と光の調和。
+                  </p>
+                </div>
+                <div
+                  class="flex items-start gap-space-sm bg-surface-container/60 p-space-sm rounded-lg backdrop-blur-sm shadow-sm"
+                >
+                  <span
+                    class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container-highest text-primary font-semibold"
+                    >DE-DE</span
+                  >
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant leading-snug"
+                  >
+                    Präzision in jeder Nuance. Entwickelt mit architektonischer
+                    Konsequenz für das moderne Habitat.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Quick Interactive Language Filter Chips with Coverage Meters -->
+            <div class="flex flex-col gap-space-xs pt-space-sm">
+              <span
+                class="font-label-sm text-label-sm uppercase tracking-wider text-outline"
+                >Active Corpus Localization Coverage</span
+              >
+              <div
+                class="flex flex-wrap items-center gap-space-sm"
+                id="lang-chip-container"
+              >
+                <button
+                  class="lang-chip active px-space-md py-space-xs rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md flex items-center gap-space-xs shadow-md transition-all"
+                  onclick="setLangFilter('all', this)"
+                >
+                  <span>All Lexicons (5)</span>
+                  <span
+                    class="font-label-sm text-label-sm px-space-xs rounded-full bg-on-primary-container/20 text-on-primary-container"
+                    >100%</span
+                  >
+                </button>
+                <button
+                  class="lang-chip px-space-md py-space-xs rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center gap-space-xs shadow-sm transition-all"
+                  onclick="setLangFilter('en', this)"
+                >
+                  <span>🇺🇸 English (US)</span>
+                  <span
+                    class="font-label-sm text-label-sm px-space-xs rounded-full bg-tertiary-container text-on-tertiary-container font-semibold"
+                    >100% Verified</span
+                  >
+                </button>
+                <button
+                  class="lang-chip px-space-md py-space-xs rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center gap-space-xs shadow-sm transition-all"
+                  onclick="setLangFilter('ja', this)"
+                >
+                  <span>🇯🇵 日本語</span>
+                  <span
+                    class="font-label-sm text-label-sm px-space-xs rounded-full bg-tertiary-container text-on-tertiary-container font-semibold"
+                    >99.4% Verified</span
+                  >
+                </button>
+                <button
+                  class="lang-chip px-space-md py-space-xs rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center gap-space-xs shadow-sm transition-all"
+                  onclick="setLangFilter('de', this)"
+                >
+                  <span>🇩🇪 Deutsch</span>
+                  <span
+                    class="font-label-sm text-label-sm px-space-xs rounded-full bg-surface-container-highest text-secondary font-semibold"
+                    >98.1% Synced</span
+                  >
+                </button>
+                <button
+                  class="lang-chip px-space-md py-space-xs rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center gap-space-xs shadow-sm transition-all"
+                  onclick="setLangFilter('fr', this)"
+                >
+                  <span>🇫🇷 Français</span>
+                  <span
+                    class="font-label-sm text-label-sm px-space-xs rounded-full bg-surface-container-highest text-secondary font-semibold"
+                    >96.8% Synced</span
+                  >
+                </button>
+                <button
+                  class="lang-chip px-space-md py-space-xs rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center gap-space-xs shadow-sm transition-all"
+                  onclick="setLangFilter('ar', this)"
+                >
+                  <span>🇸🇦 العربية (RTL)</span>
+                  <span
+                    class="font-label-sm text-label-sm px-space-xs rounded-full bg-surface-container-highest text-secondary font-semibold"
+                    >95.2% Synced</span
+                  >
+                </button>
+              </div>
+            </div>
+            <!-- Live Region Selector & Tax/Shipping Telemetry Bar -->
+            <div
+              class="w-full bg-surface-container-high/90 backdrop-blur-md rounded-lg p-space-md flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md shadow-md"
+            >
+              <div class="flex flex-wrap items-center gap-space-lg">
+                <div class="flex items-center gap-space-sm">
+                  <span
+                    class="material-symbols-outlined text-secondary text-headline-sm"
+                    >tune</span
+                  >
+                  <div class="flex flex-col">
+                    <span
+                      class="font-label-sm text-label-sm uppercase tracking-wider text-outline"
+                      >Target Customs &amp; VAT Context</span
+                    >
+                    <div class="flex items-center gap-space-xs">
+                      <select
+                        class="bg-surface-container-lowest text-on-surface font-label-md text-label-md px-space-sm py-1 rounded focus:outline-none focus:bg-surface-container cursor-pointer"
+                        id="region-selector"
+                        onchange="updateRegionalRules(this.value)"
+                      >
+                        <option value="us">
+                          United States — State Sales Tax Calculated at Checkout
+                        </option>
+                        <option value="eu">
+                          European Union — Harmonized 19-21% VAT Inclusive
+                        </option>
+                        <option value="jp">
+                          Japan (日本) — 10% 消費税 (Consumption Tax Included)
+                        </option>
+                        <option value="gcc">
+                          GCC / Saudi Arabia — 15% Standard Zakat/VAT Dynamic
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex items-center gap-space-sm">
+                  <span
+                    class="material-symbols-outlined text-tertiary text-headline-sm"
+                    >local_shipping</span
+                  >
+                  <div class="flex flex-col">
+                    <span
+                      class="font-label-sm text-label-sm uppercase tracking-wider text-outline"
+                      >Global Logistics Route</span
+                    >
+                    <span
+                      class="font-label-md text-label-md text-on-surface font-medium"
+                      id="shipping-route-text"
+                      >Direct Hub: Tokyo Narita → San Francisco Int'l (2-4
+                      Days)</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex items-center gap-space-md w-full lg:w-auto justify-end"
+              >
+                <div class="text-right">
+                  <span class="font-label-sm text-label-sm text-outline block"
+                    >Active Tariff Protocol</span
+                  >
+                  <span
+                    class="font-label-md text-label-md text-tertiary font-semibold"
+                    id="tariff-badge"
+                    >Duty-Exempt Electronics (HS 8518)</span
+                  >
+                </div>
+                <span class="w-px h-8 bg-surface-container-highest"></span>
+                <button
+                  class="px-space-md py-space-xs rounded bg-surface-container-lowest hover:bg-surface-container font-label-md text-label-md text-on-surface flex items-center gap-space-xs shadow-sm transition-all"
+                  onclick="toggleAllBilingual()"
+                >
+                  <span
+                    class="material-symbols-outlined text-label-md text-secondary"
+                    >compare_arrows</span
+                  >
+                  <span>Toggle Bilingual Feed</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Interactive Filter & Sorting Bar -->
+        <section
+          class="w-full px-gutter-mobile md:px-margin py-space-md bg-surface sticky top-20 z-40 backdrop-blur-xl shadow-md"
+        >
+          <div
+            class="max-w-7xl mx-auto flex flex-col md:flex-row items-stretch md:items-center justify-between gap-space-md"
+          >
+            <!-- Category Chips -->
+            <div
+              class="flex items-center gap-space-xs overflow-x-auto pb-space-xs md:pb-0 scrollbar-none"
+            >
+              <button
+                class="cat-pill active px-space-md py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md whitespace-nowrap shadow-sm"
+                onclick="filterCategory('all', this)"
+              >
+                All Hardware (6)
+              </button>
+              <button
+                class="cat-pill px-space-md py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md whitespace-nowrap shadow-sm"
+                onclick="filterCategory('audio', this)"
+              >
+                Smart Audio
+              </button>
+              <button
+                class="cat-pill px-space-md py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md whitespace-nowrap shadow-sm"
+                onclick="filterCategory('living', this)"
+              >
+                Ambient Living
+              </button>
+              <button
+                class="cat-pill px-space-md py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md whitespace-nowrap shadow-sm"
+                onclick="filterCategory('workspace', this)"
+              >
+                Ergonomic Workspace
+              </button>
+              <button
+                class="cat-pill px-space-md py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md whitespace-nowrap shadow-sm"
+                onclick="filterCategory('sensors', this)"
+              >
+                Wearable Sensors
+              </button>
+            </div>
+            <!-- Controls Right: Currency + Multilingual Search -->
+            <div class="flex flex-wrap items-center gap-space-md">
+              <!-- Currency Toggle Radios -->
+              <div
+                class="flex items-center bg-surface-container-low rounded-lg p-1 shadow-sm"
+              >
+                <button
+                  class="curr-btn active px-space-sm py-1 rounded font-label-md text-label-md bg-secondary-container text-on-secondary-container font-semibold transition-all"
+                  onclick="setCurrency('USD', this)"
+                >
+                  USD $
+                </button>
+                <button
+                  class="curr-btn px-space-sm py-1 rounded font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all"
+                  onclick="setCurrency('EUR', this)"
+                >
+                  EUR €
+                </button>
+                <button
+                  class="curr-btn px-space-sm py-1 rounded font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all"
+                  onclick="setCurrency('JPY', this)"
+                >
+                  JPY ¥
+                </button>
+                <button
+                  class="curr-btn px-space-sm py-1 rounded font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all"
+                  onclick="setCurrency('SAR', this)"
+                >
+                  SAR ﷼
+                </button>
+              </div>
+              <!-- Search Bar with Live Synonym Telemetry -->
+              <div class="relative flex-1 sm:w-72">
+                <div
+                  class="flex items-center bg-surface-container-lowest rounded-lg px-space-md py-1.5 gap-space-xs shadow-sm"
+                >
+                  <span
+                    class="material-symbols-outlined text-outline text-label-lg"
+                    >translate</span
+                  >
+                  <input
+                    class="bg-transparent w-full text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none"
+                    id="synonym-search"
+                    oninput="handleSearch(this.value)"
+                    placeholder="Search by concept (e.g. 音響, Klang, ضوء)..."
+                    type="text"
+                  />
+                </div>
+                <!-- Synonym Helper Badge -->
+                <div
+                  class="hidden absolute top-full left-0 right-0 mt-1 bg-surface-container-highest p-space-xs rounded shadow-xl z-50 flex items-center justify-between text-label-sm font-label-sm text-on-surface"
+                  id="search-synonym-preview"
+                >
+                  <span class="text-secondary" id="synonym-match-text"
+                    >Synonym mapping active: Audio / 音響 / Akustik</span
+                  >
+                  <span class="text-tertiary">Matched 3 SKUs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Product Grid Showcase (6 Premium Products) -->
+        <section
+          class="w-full px-gutter-mobile md:px-margin py-space-xl bg-background"
+        >
+          <div class="max-w-7xl mx-auto">
+            <!-- Section Meta Header -->
+            <div
+              class="flex items-center justify-between mb-space-lg pb-space-xs"
+            >
+              <div class="flex items-center gap-space-sm">
+                <span
+                  class="font-headline-md text-headline-md text-on-surface font-semibold"
+                  >Precision Hardware Collection</span
+                >
+                <span
+                  class="px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-mono"
+                  >6 DEPLOYMENTS</span
+                >
+              </div>
+              <div
+                class="flex items-center gap-space-xs font-label-sm text-label-sm text-outline"
+              >
+                <span
+                  class="material-symbols-outlined text-label-md text-tertiary"
+                  >published_with_changes</span
+                >
+                <span>Automatic String Expansion Protected</span>
+              </div>
+            </div>
+            <!-- 12-Column Grid for bespoke Bento/Catalog flow -->
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg"
+              id="product-catalog-grid"
+            >
+              <!-- PRODUCT 1: AURA Pulse One (Featured / Best-seller) -->
+              <article
+                class="product-card group relative flex flex-col bg-surface-container rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
+                data-category="audio"
+              >
+                <!-- Top Badges Overlay -->
+                <div
+                  class="absolute top-space-md left-space-md z-20 flex flex-wrap items-center gap-space-xs"
+                >
+                  <span
+                    class="px-space-sm py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-semibold tracking-wider uppercase"
+                    >Global Best-Seller</span
+                  >
+                  <span
+                    class="px-space-sm py-0.5 rounded bg-surface-container-lowest/80 backdrop-blur-md text-tertiary font-label-sm text-label-sm flex items-center gap-1 font-mono"
+                  >
+                    <span
+                      class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"
+                    ></span>
+                    5/5 Locales Synced
+                  </span>
+                </div>
+                <div class="absolute top-space-md right-space-md z-20">
+                  <span
+                    class="font-label-sm text-label-sm bg-surface-container-highest/90 text-secondary px-space-xs py-0.5 rounded font-mono"
+                    >100V-240V Multi-Plug</span
+                  >
+                </div>
+                <!-- Mockup Plinth Image Container -->
+                <div
+                  class="relative w-full h-72 bg-surface-container-lowest overflow-hidden flex items-center justify-center p-space-md"
+                >
+                  <img
+                    class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                    data-alt="High-end studio photography of the AURA Pulse One spatial audio headphones in dark obsidian aluminum and slate acoustic fabric. Suspended against a dark minimal architectural plinth with cinematic dramatic edge lighting in cyan and indigo. Swiss modernist industrial design product render."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1H1pa5wDw9Q2BgQ1xLRD_V_aumrV7ndqleiUh3rVY8idU9tRqTkZgBIQRR603V6jYrD3tw1SeceaCxDzLDTazLU3h5VNzCbicQHnBTEeZD9AtkUD8yNZYsWcy-NomcIcPniNYY17j1Lg-qnlxFv2A5iY6d90lSoMvrwWMYIkJ5ZWt5xb-oF9UwaY5nhehD2s-8GCAqndiS2oDX3cz2D4U4XR62bFd76H3vUwVW7EOA18_DGrHqUNwOg"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent opacity-60"
+                  ></div>
+                </div>
+                <!-- Content Body -->
+                <div
+                  class="p-space-lg flex flex-col flex-1 justify-between gap-space-md"
+                >
+                  <div class="flex flex-col gap-space-xs">
+                    <div class="flex items-center justify-between">
+                      <span
+                        class="font-label-sm text-label-sm text-secondary tracking-widest uppercase font-mono"
+                        >SKU-AURA-PLS-01</span
+                      >
+                      <div class="flex items-center gap-1">
+                        <!-- Language Coverage Beads -->
+                        <span
+                          class="w-2 h-2 rounded-full bg-tertiary"
+                          title="EN Ready"
+                        ></span>
+                        <span
+                          class="w-2 h-2 rounded-full bg-tertiary"
+                          title="JA Ready"
+                        ></span>
+                        <span
+                          class="w-2 h-2 rounded-full bg-tertiary"
+                          title="DE Ready"
+                        ></span>
+                        <span
+                          class="w-2 h-2 rounded-full bg-tertiary"
+                          title="FR Ready"
+                        ></span>
+                        <span
+                          class="w-2 h-2 rounded-full bg-tertiary"
+                          title="AR Ready"
+                        ></span>
+                      </div>
+                    </div>
+                    <h2
+                      class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-primary transition-colors"
+                    >
+                      AURA Pulse One — Spatial Audio Headset
+                    </h2>
+                    <!-- Dynamic Bilingual Snippet -->
+                    <div
+                      class="bg-surface-container-lowest p-space-sm rounded text-on-surface-variant font-body-sm text-body-sm leading-relaxed"
+                    >
+                      <div class="text-on-surface">
+                        40mm Beryllium acoustic drivers with real-time room
+                        boundary scanning.
+                      </div>
+                      <div
+                        class="text-secondary text-label-sm font-label-sm mt-1 border-t border-surface-container-high pt-1"
+                      >
+                        JA:
+                        40mmベリリウムドライバー搭載。室内空間を即時スキャンする次世代音響。
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Price & Specs Footer -->
+                  <div class="flex flex-col gap-space-sm pt-space-xs">
+                    <div class="flex items-baseline justify-between">
+                      <div class="flex flex-col">
+                        <span
+                          class="font-label-sm text-label-sm text-outline uppercase tracking-wider"
+                          >Harmonized MSRP</span
+                        >
+                        <div class="flex items-baseline gap-space-xs">
+                          <span
+                            class="font-headline-sm text-headline-sm font-semibold text-on-surface price-val"
+                            data-eur="€329"
+                            data-jpy="¥52,000"
+                            data-sar="﷼1,310"
+                            data-usd="$349"
+                            >$349</span
+                          >
+                          <span
+                            class="font-label-sm text-label-sm text-outline tax-subtext"
+                            >excl. state tax</span
+                          >
+                        </div>
+                      </div>
+                      <span
+                        class="px-space-sm py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant"
+                        >Low Latency 14ms</span
+                      >
+                    </div>
+                    <div class="flex items-center gap-space-sm">
+                      <button
+                        class="flex-1 py-2 px-space-md bg-primary-container hover:bg-primary text-on-primary-container hover:text-on-primary rounded font-label-lg text-label-lg font-semibold flex items-center justify-center gap-space-xs shadow-md transition-all"
+                        onclick="openLocaleSpecModal('AURA Pulse One')"
+                      >
+                        <span class="material-symbols-outlined text-label-md"
+                          >g_translate</span
+                        >
+                        <span>View Localized Specs</span>
+                      </button>
+                      <button
+                        class="p-2 bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded transition-colors"
+                        title="Quick Quickmark"
+                      >
+                        <span class="material-symbols-outlined text-label-lg"
+                          >bookmark_border</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <!-- PRODUCT 2: AURA Horizon Lumina -->
+              <article
+                class="product-card group relative flex flex-col bg-surface-container rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
+                data-category="living"
+              >
+                <div
+                  class="absolute top-space-md left-space-md z-20 flex flex-wrap items-center gap-space-xs"
+                >
+                  <span
+                    class="px-space-sm py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold tracking-wider uppercase"
+                    >PSE &amp; CE Certified</span
+                  >
+                </div>
+                <div class="absolute top-space-md right-space-md z-20">
+                  <span
+                    class="font-label-sm text-label-sm bg-surface-container-highest/90 text-secondary px-space-xs py-0.5 rounded font-mono"
+                    >100V-240V (50/60Hz)</span
+                  >
+                </div>
+                <div
+                  class="relative w-full h-72 bg-surface-container-lowest overflow-hidden flex items-center justify-center p-space-md"
+                >
+                  <img
+                    class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                    data-alt="Minimalist horizontal architectural desk light bar by AURA, called Horizon Lumina. Machined raw matte titanium cylindrical chassis with ultra-soft ambient sunset gradient LED glow. Resting on a dark concrete architectural desk with shadows. Elegant Japanese modernism lighting design render."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDy_dS5UVudR7zjIcHJIvZtWqBFPtD00kb32zB7CgyiiofMAj8PyZxTbh4PNLAUGpLqROg8DXrsLK9IoOxLJGUpVFb441Jr8siuRa32IEW1ag5XZlThpOM_DHmXdC-Q8FMxDIc17LiGY8gnN-p89spKs7KQs5SPz425C-Iyc9cf5Hl043_zNj8hSZUlPvw5YIIWr25zmKLXDjaqcccZcgTLF1nLjRYsS2KAdEVJhNyG0F5qxOsCxPqeEA"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent opacity-60"
+                  ></div>
+                </div>
+                <div
+                  class="p-space-lg flex flex-col flex-1 justify-between gap-space-md"
+                >
+                  <div class="flex flex-col gap-space-xs">
+                    <div class="flex items-center justify-between">
+                      <span
+                        class="font-label-sm text-label-sm text-secondary tracking-widest uppercase font-mono"
+                        >SKU-AURA-LMN-02</span
+                      >
+                      <div class="flex items-center gap-1">
+                        <span
+                          class="w-2 h-2 rounded-full bg-tertiary"
+                          title="EN Ready"
+                        ></span>
+                        <span
+                          class="w-2 h-2 rounded-full bg-tertiary"
+                          title="JA Ready"
+                        ></span>
+                        <span
+                          class="w-2 h-2 rounded-full bg-tertiary"
+                          title="DE Ready"
+                        ></span>
+                        <span
+                          class="w-2 h-2 rounded-full bg-tertiary"
+                          title="FR Ready"
+                        ></span>
+                        <span
+                          class="w-2 h-2 rounded-full bg-tertiary"
+                          title="AR Ready"
+                        ></span>
+                      </div>
+                    </div>
+                    <h2
+                      class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-primary transition-colors"
+                    >
+                      AURA Horizon Lumina — Circadian Light
+                    </h2>
+                    <div
+                      class="bg-surface-container-lowest p-space-sm rounded text-on-surface-variant font-body-sm text-body-sm leading-relaxed"
+                    >
+                      <div class="text-on-surface">
+                        Sun-tracking solar spectrum illuminator for high-focus
+                        work sessions.
+                      </div>
+                      <div
+                        class="text-secondary text-label-sm font-label-sm mt-1 border-t border-surface-container-high pt-1"
+                      >
+                        DE: Sonnenstand-synchronisierte Spektralleuchte zur
+                        circadianen Rhythmus-Optimierung.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-space-sm pt-space-xs">
+                    <div class="flex items-baseline justify-between">
+                      <div class="flex flex-col">
+                        <span
+                          class="font-label-sm text-label-sm text-outline uppercase tracking-wider"
+                          >Harmonized MSRP</span
+                        >
+                        <div class="flex items-baseline gap-space-xs">
+                          <span
+                            class="font-headline-sm text-headline-sm font-semibold text-on-surface price-val"
+                            data-eur="€209"
+                            data-jpy="¥32,800"
+                            data-sar="﷼820"
+                            data-usd="$219"
+                            >$219</span
+                          >
+                          <span
+                            class="font-label-sm text-label-sm text-outline tax-subtext"
+                            >excl. state tax</span
+                          >
+                        </div>
+                      </div>
+                      <span
+                        class="px-space-sm py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant"
+                        >CRI 98+ TrueColor</span
+                      >
+                    </div>
+                    <div class="flex items-center gap-space-sm">
+                      <button
+                        class="flex-1 py-2 px-space-md bg-primary-container hover:bg-primary text-on-primary-container hover:text-on-primary rounded font-label-lg text-label-lg font-semibold flex items-center justify-center gap-space-xs shadow-md transition-all"
+                        onclick="openLocaleSpecModal('AURA Horizon Lumina')"
+                      >
+                        <span class="material-symbols-outlined text-label-md"
+                          >g_translate</span
+                        >
+                        <span>View Localized Specs</span>
+                      </button>
+                      <button
+                        class="p-2 bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded transition-colors"
+                        title="Quick Quickmark"
+                      >
+                        <span class="material-symbols-outlined text-label-lg"
+                          >bookmark_border</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <!-- PRODUCT 3: AURA Deskmat MagFlow -->
+              <article
+                class="product-card group relative flex flex-col bg-surface-container rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
+                data-category="workspace"
+              >
+                <div
+                  class="absolute top-space-md left-space-md z-20 flex flex-wrap items-center gap-space-xs"
+                >
+                  <span
+                    class="px-space-sm py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold tracking-wider uppercase"
+                    >Full-Grain Leather</span
+                  >
+                </div>
+                <div class="absolute top-space-md right-space-md z-20">
+                  <span
+                    class="font-label-sm text-label-sm bg-surface-container-highest/90 text-secondary px-space-xs py-0.5 rounded font-mono"
+                    >Universal Qi2 / 15W</span
+                  >
+                </div>
+                <div
+                  class="relative w-full h-72 bg-surface-container-lowest overflow-hidden flex items-center justify-center p-space-md"
+                >
+                  <img
+                    class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                    data-alt="Flat lay photograph of AURA Deskmat MagFlow, a deep charcoal vegetal tanned full-grain leather magnetic workspace pad. Integrated brushed aluminum magnetic cable organizers and an embedded wireless charging dock indicator. Elegant minimalist stationery layout on dark walnut surface."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8iktnVbRhyvHjy28UUvDjdlP0sYwDMpjkYhzS8zAFLsMZWEeMcxVtkKFQhDzcVH2sCBLYH2ueyIeL25xcO7X_bv2dWzIwfHnJGdAC4WK3j5zzlXWyVU2Brz5r23TPbhbRhdyx_5xNpbACwbegGvSUDcXkn5JpXKpqTRZQePpDarfAUo3_1e_2nq90t4DlvMx_8015EZ6-DujhK49RTGOqYn6wzPA12O3v-GFrEOVb3f5ZARglm3vt4Q"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent opacity-60"
+                  ></div>
+                </div>
+                <div
+                  class="p-space-lg flex flex-col flex-1 justify-between gap-space-md"
+                >
+                  <div class="flex flex-col gap-space-xs">
+                    <div class="flex items-center justify-between">
+                      <span
+                        class="font-label-sm text-label-sm text-secondary tracking-widest uppercase font-mono"
+                        >SKU-AURA-DSK-03</span
+                      >
+                      <div class="flex items-center gap-1">
+                        <span
+                          class="w-2 h-2 rounded-full bg-tertiary"
+                          title="EN Ready"
+                        ></span>
+                        <span
+                          class="w-2 h-2 rounded-full bg-tertiary"
+                          title="JA Ready"
+                        ></span>
+                        <span
+                          class="w-2 h-2 rounded-full bg-tertiary"
+                          title="DE Ready"
+                        ></span>
+                        <span
+                          class="w-2 h-2 rounded-full bg-tertiary"
+                          title="FR Ready"
+                        ></span>
+                        <span
+                          class="w-2 h-2 rounded-full bg-surface-bright"
+                          title="AR in progress"
+                        ></span>
+                      </div>
+                    </div>
+                    <h2
+                      class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-primary transition-colors"
+                    >
+                      AURA Deskmat MagFlow — Work Surface
+                    </h2>
+                    <div
+                      class="bg-surface-container-lowest p-space-sm rounded text-on-surface-variant font-body-sm text-body-sm leading-relaxed"
+                    >
+                      <div class="text-on-surface">
+                        Integrated magnetic rail with 15W induction point and
+                        anti-fray edging.
+                      </div>
+                      <div
+                        class="text-secondary text-label-sm font-label-sm mt-1 border-t border-surface-container-high pt-1"
+                      >
+                        FR: Sous-main magnétique en cuir véritable avec point de
+                        charge Qi2 certifié.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-space-sm pt-space-xs">
+                    <div class="flex items-baseline justify-between">
+                      <div class="flex flex-col">
+                        <span
+                          class="font-label-sm text-label-sm text-outline uppercase tracking-wider"
+                          >Harmonized MSRP</span
+                        >
+                        <div class="flex items-baseline gap-space-xs">
+                          <span
+                            class="font-headline-sm text-headline-sm font-semibold text-on-surface price-val"
+                            data-eur="€85"
+                            data-jpy="¥13,500"
+                            data-sar="﷼335"
+                            data-usd="$89"
+                            >$89</span
+                          >
+                          <span
+                            class="font-label-sm text-label-sm text-outline tax-subtext"
+                            >excl. state tax</span
+                          >
+                        </div>
+                      </div>
+                      <span
+                        class="px-space-sm py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant"
+                        >900 x 400 mm</span
+                      >
+                    </div>
+                    <div class="flex items-center gap-space-sm">
+                      <button
+                        class="flex-1 py-2 px-space-md bg-primary-container hover:bg-primary text-on-primary-container hover:text-on-primary rounded font-label-lg text-label-lg font-semibold flex items-center justify-center gap-space-xs shadow-md transition-all"
+                        onclick="openLocaleSpecModal('AURA Deskmat MagFlow')"
+                      >
+                        <span class="material-symbols-outlined text-label-md"
+                          >g_translate</span
+                        >
+                        <span>View Localized Specs</span>
+                      </button>
+                      <button
+                        class="p-2 bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded transition-colors"
+                        title="Quick Quickmark"
+                      >
+                        <span class="material-symbols-outlined text-label-lg"
+                          >bookmark_border</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <!-- PRODUCT 4: AURA Sense Core -->
+              <article
+                class="product-card group relative flex flex-col bg-surface-container rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
+                data-category="sensors"
+              >
+                <div
+                  class="absolute top-space-md left-space-md z-20 flex flex-wrap items-center gap-space-xs"
+                >
+                  <span
+                    class="px-space-sm py-0.5 rounded bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm font-semibold tracking-wider uppercase"
+                    >Matter / Thread Certified</span
+                  >
+                </div>
+                <div class="absolute top-space-md right-space-md z-20">
+                  <span
+                    class="font-label-sm text-label-sm bg-surface-container-highest/90 text-secondary px-space-xs py-0.5 rounded font-mono"
+                    >USB-C / 5V 1A</span
+                  >
+                </div>
+                <div
+                  class="relative w-full h-72 bg-surface-container-lowest overflow-hidden flex items-center justify-center p-space-md"
+                >
+                  <img
+                    class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                    data-alt="Architectural smart thermostat sensor pod called AURA Sense Core. Square monolithic dark basalt finish with a high-resolution circular e-ink monochrome micro-display showing temperature and air purity index. Mounted on a textured dark plaster wall in a minimalist penthouse."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4ghtpAt61MT1QLC4XWDVcbK5_WCQr252bXFTDq-HXvXfkHyoAughlNFZvYeRVJGHBD0hhroWKejtk36JBu6A882bqzPXeVKspwTb5drrXOFpQJeGVBZq1pW0_9rixF1d5frnakRVBdRzojlKIyiFzeiAxFr1gZtIgLQaoguKyy5dI5JxN-CFbwbgmSuRsqdM6IsijWdwxw1pZXmU0vjrTsl_tijLBQICgb7ZUn9e7yHZNb9XEMlQ5Zg"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent opacity-60"
+                  ></div>
+                </div>
+                <div
+                  class="p-space-lg flex flex-col flex-1 justify-between gap-space-md"
+                >
+                  <div class="flex flex-col gap-space-xs">
+                    <div class="flex items-center justify-between">
+                      <span
+                        class="font-label-sm text-label-sm text-secondary tracking-widest uppercase font-mono"
+                        >SKU-AURA-SNS-04</span
+                      >
+                      <div class="flex items-center gap-1">
+                        <span
+                          class="w-2 h-2 rounded-full bg-tertiary"
+                          title="EN Ready"
+                        ></span>
+                        <span
+                          class="w-2 h-2 rounded-full bg-tertiary"
+                          title="JA Ready"
+                        ></span>
+                        <span
+                          class="w-2 h-2 rounded-full bg-tertiary"
+                          title="DE Ready"
+                        ></span>
+                        <span
+                          class="w-2 h-2 rounded-full bg-tertiary"
+                          title="FR Ready"
+                        ></span>
+                        <span
+                          class="w-2 h-2 rounded-full bg-tertiary"
+                          title="AR Ready"
+                        ></span>
+                      </div>
+                    </div>
+                    <h2
+                      class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-primary transition-colors"
+                    >
+                      AURA Sense Core — Dual Thermostat
+                    </h2>
+                    <div
+                      class="bg-surface-container-lowest p-space-sm rounded text-on-surface-variant font-body-sm text-body-sm leading-relaxed"
+                    >
+                      <div class="text-on-surface">
+                        Precision NDIR CO₂ sensor &amp; VOC laser particle
+                        spectrometer.
+                      </div>
+                      <div
+                        class="text-secondary text-label-sm font-label-sm mt-1 border-t border-surface-container-high pt-1"
+                      >
+                        AR: مستشعر مناخي مزدوج فائق الدقة لقياس جودة الهواء
+                        وثاني أكسيد الكربون.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-space-sm pt-space-xs">
+                    <div class="flex items-baseline justify-between">
+                      <div class="flex flex-col">
+                        <span
+                          class="font-label-sm text-label-sm text-outline uppercase tracking-wider"
+                          >Harmonized MSRP</span
+                        >
+                        <div class="flex items-baseline gap-space-xs">
+                          <span
+                            class="font-headline-sm text-headline-sm font-semibold text-on-surface price-val"
+                            data-eur="€169"
+                            data-jpy="¥26,900"
+                            data-sar="﷼670"
+                            data-usd="$179"
+                            >$179</span
+                          >
+                          <span
+                            class="font-label-sm text-label-sm text-outline tax-subtext"
+                            >excl. state tax</span
+                          >
+                        </div>
+                      </div>
+                      <span
+                        class="px-space-sm py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant"
+                        >±0.1°C Tolerances</span
+                      >
+                    </div>
+                    <div class="flex items-center gap-space-sm">
+                      <button
+                        class="flex-1 py-2 px-space-md bg-primary-container hover:bg-primary text-on-primary-container hover:text-on-primary rounded font-label-lg text-label-lg font-semibold flex items-center justify-center gap-space-xs shadow-md transition-all"
+                        onclick="openLocaleSpecModal('AURA Sense Core')"
+                      >
+                        <span class="material-symbols-outlined text-label-md"
+                          >g_translate</span
+                        >
+                        <span>View Localized Specs</span>
+                      </button>
+                      <button
+                        class="p-2 bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded transition-colors"
+                        title="Quick Quickmark"
+                      >
+                        <span class="material-symbols-outlined text-label-lg"
+                          >bookmark_border</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <!-- PRODUCT 5: AURA Beam Mini -->
+              <article
+                class="product-card group relative flex flex-col bg-surface-container rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
+                data-category="living"
+              >
+                <div
+                  class="absolute top-space-md left-space-md z-20 flex flex-wrap items-center gap-space-xs"
+                >
+                  <span
+                    class="px-space-sm py-0.5 rounded bg-primary text-on-primary font-label-sm text-label-sm font-semibold tracking-wider uppercase"
+                    >New Global Release</span
+                  >
+                </div>
+                <div class="absolute top-space-md right-space-md z-20">
+                  <span
+                    class="font-label-sm text-label-sm bg-surface-container-highest/90 text-secondary px-space-xs py-0.5 rounded font-mono"
+                    >100V-240V Auto-Switch</span
+                  >
+                </div>
+                <div
+                  class="relative w-full h-72 bg-surface-container-lowest overflow-hidden flex items-center justify-center p-space-md"
+                >
+                  <img
+                    class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                    data-alt="Compact portable 4K micro laser projector called AURA Beam Mini. CNC milled dark space grey block with copper accent optical ring lens. Casting a sharp warm architectural beam of light in a dim moody Japanese tearoom with tatami and black cedar walls."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeaDVLsjCo0KPFJfzlg_sLIsmBgq55DQ_Miv0XrogsPmoGZG3QZ0JNQbfkv8Y12nt5d0oM5YOt4S4RHYsLI-4KeDc2UyscsNcLtWLJHaeuL-O1sJu_Tr4W4qFsxJ-Ti8RbtjNGRqxcOmZj_kuhd9ArMA2-kq_jUbbUQ0KTnR0aqm7s-QbvShKv6D7-QvpgvzP_FdhB-NVlmDt0hNoxnfGTZvZOCFqoQeDruQKffhMmD_0Vty2Tv-7r3Q"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent opacity-60"
+                  ></div>
+                </div>
+                <div
+                  class="p-space-lg flex flex-col flex-1 justify-between gap-space-md"
+                >
+                  <div class="flex flex-col gap-space-xs">
+                    <div class="flex items-center justify-between">
+                      <span
+                        class="font-label-sm text-label-sm text-secondary tracking-widest uppercase font-mono"
+                        >SKU-AURA-BEM-05</span
+                      >
+                      <div class="flex items-center gap-1">
+                        <span
+                          class="w-2 h-2 rounded-full bg-tertiary"
+                          title="EN Ready"
+                        ></span>
+                        <span
+                          class="w-2 h-2 rounded-full bg-tertiary"
+                          title="JA Ready"
+                        ></span>
+                        <span
+                          class="w-2 h-2 rounded-full bg-tertiary"
+                          title="DE Ready"
+                        ></span>
+                        <span
+                          class="w-2 h-2 rounded-full bg-tertiary"
+                          title="FR Ready"
+                        ></span>
+                        <span
+                          class="w-2 h-2 rounded-full bg-tertiary"
+                          title="AR Ready"
+                        ></span>
+                      </div>
+                    </div>
+                    <h2
+                      class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-primary transition-colors"
+                    >
+                      AURA Beam Mini — 4K Laser Projector
+                    </h2>
+                    <div
+                      class="bg-surface-container-lowest p-space-sm rounded text-on-surface-variant font-body-sm text-body-sm leading-relaxed"
+                    >
+                      <div class="text-on-surface">
+                        ALPD 4.0 RGB+ laser engine in a pocketable 480g
+                        magnesium enclosure.
+                      </div>
+                      <div
+                        class="text-secondary text-label-sm font-label-sm mt-1 border-t border-surface-container-high pt-1"
+                      >
+                        JA: 超小型マグネシウム筐体に4K ALPD
+                        4.0レーザーを凝縮。圧倒的鮮明度。
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-space-sm pt-space-xs">
+                    <div class="flex items-baseline justify-between">
+                      <div class="flex flex-col">
+                        <span
+                          class="font-label-sm text-label-sm text-outline uppercase tracking-wider"
+                          >Harmonized MSRP</span
+                        >
+                        <div class="flex items-baseline gap-space-xs">
+                          <span
+                            class="font-headline-sm text-headline-sm font-semibold text-on-surface price-val"
+                            data-eur="€469"
+                            data-jpy="¥74,900"
+                            data-sar="﷼1,870"
+                            data-usd="$499"
+                            >$499</span
+                          >
+                          <span
+                            class="font-label-sm text-label-sm text-outline tax-subtext"
+                            >excl. state tax</span
+                          >
+                        </div>
+                      </div>
+                      <span
+                        class="px-space-sm py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant"
+                        >1,200 ANSI Lumens</span
+                      >
+                    </div>
+                    <div class="flex items-center gap-space-sm">
+                      <button
+                        class="flex-1 py-2 px-space-md bg-primary-container hover:bg-primary text-on-primary-container hover:text-on-primary rounded font-label-lg text-label-lg font-semibold flex items-center justify-center gap-space-xs shadow-md transition-all"
+                        onclick="openLocaleSpecModal('AURA Beam Mini')"
+                      >
+                        <span class="material-symbols-outlined text-label-md"
+                          >g_translate</span
+                        >
+                        <span>View Localized Specs</span>
+                      </button>
+                      <button
+                        class="p-2 bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded transition-colors"
+                        title="Quick Quickmark"
+                      >
+                        <span class="material-symbols-outlined text-label-lg"
+                          >bookmark_border</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <!-- PRODUCT 6: AURA Keypad Studio -->
+              <article
+                class="product-card group relative flex flex-col bg-surface-container rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
+                data-category="workspace"
+              >
+                <div
+                  class="absolute top-space-md left-space-md z-20 flex flex-wrap items-center gap-space-xs"
+                >
+                  <span
+                    class="px-space-sm py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold tracking-wider uppercase"
+                    >Multi-Script Keycaps</span
+                  >
+                </div>
+                <div class="absolute top-space-md right-space-md z-20">
+                  <span
+                    class="font-label-sm text-label-sm bg-surface-container-highest/90 text-secondary px-space-xs py-0.5 rounded font-mono"
+                    >USB-C / BT 5.3 Low-Power</span
+                  >
+                </div>
+                <div
+                  class="relative w-full h-72 bg-surface-container-lowest overflow-hidden flex items-center justify-center p-space-md"
+                >
+                  <img
+                    class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                    data-alt="High angle macro shot of AURA Keypad Studio, an ortholinear tactile controller with anodized navy and space grey aluminum chassis. Custom PBT keycaps featuring subtle dual-sublegend laser engravings in Roman and Japanese Katakana. Warm backlighting on a clean architect workstation."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCae4G3DOiawoa5SbDHNfz2Otb5kSBJj7LcDdIDF3QfloGyuOMvKyJFIgk7iJri61XYq0L055QUhTGIIMtxpfHjDPv1K9JMdeoTzOEW8qmz1hmun0YyDyv1BvJpCBeZSS80tCoWg_dtuH3eRkOE_TQZguX56jaFV6f36PfFHu8MXB2cNeXpo3Ouwvci0EMILs7oXM63kXDwVTzKQBqg0X2AztDFjlar4Yw_-paG7CAacFLcPjGmXbfwYQ"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent opacity-60"
+                  ></div>
+                </div>
+                <div
+                  class="p-space-lg flex flex-col flex-1 justify-between gap-space-md"
+                >
+                  <div class="flex flex-col gap-space-xs">
+                    <div class="flex items-center justify-between">
+                      <span
+                        class="font-label-sm text-label-sm text-secondary tracking-widest uppercase font-mono"
+                        >SKU-AURA-KPD-06</span
+                      >
+                      <div class="flex items-center gap-1">
+                        <span
+                          class="w-2 h-2 rounded-full bg-tertiary"
+                          title="EN Ready"
+                        ></span>
+                        <span
+                          class="w-2 h-2 rounded-full bg-tertiary"
+                          title="JA Ready"
+                        ></span>
+                        <span
+                          class="w-2 h-2 rounded-full bg-tertiary"
+                          title="DE Ready"
+                        ></span>
+                        <span
+                          class="w-2 h-2 rounded-full bg-tertiary"
+                          title="FR Ready"
+                        ></span>
+                        <span
+                          class="w-2 h-2 rounded-full bg-tertiary"
+                          title="AR Ready"
+                        ></span>
+                      </div>
+                    </div>
+                    <h2
+                      class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-primary transition-colors"
+                    >
+                      AURA Keypad Studio — Tactile Controller
+                    </h2>
+                    <div
+                      class="bg-surface-container-lowest p-space-sm rounded text-on-surface-variant font-body-sm text-body-sm leading-relaxed"
+                    >
+                      <div class="text-on-surface">
+                        Hot-swappable magnetic hall-effect switches with analog
+                        precision triggers.
+                      </div>
+                      <div
+                        class="text-secondary text-label-sm font-label-sm mt-1 border-t border-surface-container-high pt-1"
+                      >
+                        DE: Ortholinearer Studio-Controller mit stufenlos
+                        konfigurierbarem Hall-Effekt.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-space-sm pt-space-xs">
+                    <div class="flex items-baseline justify-between">
+                      <div class="flex flex-col">
+                        <span
+                          class="font-label-sm text-label-sm text-outline uppercase tracking-wider"
+                          >Harmonized MSRP</span
+                        >
+                        <div class="flex items-baseline gap-space-xs">
+                          <span
+                            class="font-headline-sm text-headline-sm font-semibold text-on-surface price-val"
+                            data-eur="€149"
+                            data-jpy="¥23,900"
+                            data-sar="﷼595"
+                            data-usd="$159"
+                            >$159</span
+                          >
+                          <span
+                            class="font-label-sm text-label-sm text-outline tax-subtext"
+                            >excl. state tax</span
+                          >
+                        </div>
+                      </div>
+                      <span
+                        class="px-space-sm py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant"
+                        >0.1mm Rapid Trigger</span
+                      >
+                    </div>
+                    <div class="flex items-center gap-space-sm">
+                      <button
+                        class="flex-1 py-2 px-space-md bg-primary-container hover:bg-primary text-on-primary-container hover:text-on-primary rounded font-label-lg text-label-lg font-semibold flex items-center justify-center gap-space-xs shadow-md transition-all"
+                        onclick="openLocaleSpecModal('AURA Keypad Studio')"
+                      >
+                        <span class="material-symbols-outlined text-label-md"
+                          >g_translate</span
+                        >
+                        <span>View Localized Specs</span>
+                      </button>
+                      <button
+                        class="p-2 bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded transition-colors"
+                        title="Quick Quickmark"
+                      >
+                        <span class="material-symbols-outlined text-label-lg"
+                          >bookmark_border</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- Real-Time String Rhythm & Comparison Drawer / Floating Banner -->
+        <section
+          class="w-full bg-surface-container-high/95 backdrop-blur-xl px-gutter-mobile md:px-margin py-space-lg shadow-xl mt-space-xl"
+        >
+          <div
+            class="max-w-7xl mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg"
+          >
+            <div class="flex flex-col gap-space-xs max-w-sm">
+              <div
+                class="flex items-center gap-space-xs font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider"
+              >
+                <span class="material-symbols-outlined text-label-md"
+                  >sync_alt</span
+                >
+                <span>Live String Metric Monitor</span>
+              </div>
+              <h3
+                class="font-headline-sm text-headline-sm text-on-surface font-semibold"
+              >
+                Typographical Expansion Telemetry
+              </h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">
+                Observing how marketing hooks change line-length, character
+                rhythm, and visual density across Latin, Kanji, and Arabic
+                scripts.
+              </p>
+            </div>
+            <!-- Live String Comparison Ticker -->
+            <div
+              class="grid grid-cols-1 md:grid-cols-3 gap-space-md flex-1 w-full"
+            >
+              <!-- English -->
+              <div
+                class="bg-surface-container-lowest p-space-md rounded-lg flex flex-col gap-space-xs shadow-sm"
+              >
+                <div class="flex items-center justify-between">
+                  <span
+                    class="font-label-sm text-label-sm font-semibold text-tertiary"
+                    >EN (Baseline)</span
+                  >
+                  <span
+                    class="font-label-sm text-label-sm font-mono text-outline"
+                    >32 Chars · 1.0x</span
+                  >
+                </div>
+                <div
+                  class="font-body-sm text-body-sm text-on-surface font-medium leading-relaxed"
+                >
+                  "Pure spatial sound, everywhere."
+                </div>
+                <div
+                  class="w-full bg-surface-container-high h-1 rounded-full overflow-hidden mt-1"
+                >
+                  <div class="bg-tertiary h-full w-[45%]"></div>
+                </div>
+              </div>
+              <!-- Japanese -->
+              <div
+                class="bg-surface-container-lowest p-space-md rounded-lg flex flex-col gap-space-xs shadow-sm"
+              >
+                <div class="flex items-center justify-between">
+                  <span
+                    class="font-label-sm text-label-sm font-semibold text-secondary"
+                    >JA (High Density)</span
+                  >
+                  <span
+                    class="font-label-sm text-label-sm font-mono text-outline"
+                    >18 Chars · 0.6x Width</span
+                  >
+                </div>
+                <div
+                  class="font-body-sm text-body-sm text-on-surface font-medium leading-relaxed"
+                >
+                  「どこにいても、純粋な空間音響を。」
+                </div>
+                <div
+                  class="w-full bg-surface-container-high h-1 rounded-full overflow-hidden mt-1"
+                >
+                  <div class="bg-secondary h-full w-[30%]"></div>
+                </div>
+              </div>
+              <!-- German -->
+              <div
+                class="bg-surface-container-lowest p-space-md rounded-lg flex flex-col gap-space-xs shadow-sm"
+              >
+                <div class="flex items-center justify-between">
+                  <span
+                    class="font-label-sm text-label-sm font-semibold text-primary"
+                    >DE (Text Expansion)</span
+                  >
+                  <span
+                    class="font-label-sm text-label-sm font-mono text-outline"
+                    >44 Chars · +38% Width</span
+                  >
+                </div>
+                <div
+                  class="font-body-sm text-body-sm text-on-surface font-medium leading-relaxed truncate"
+                  title="Reiner räumlicher Klang, an jedem Ort erlebbar."
+                >
+                  "Reiner räumlicher Klang, überall erlebbar."
+                </div>
+                <div
+                  class="w-full bg-surface-container-high h-1 rounded-full overflow-hidden mt-1"
+                >
+                  <div class="bg-primary h-full w-[78%]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Interactive Modal: Localized Technical Specification Drawer (Hidden by default, triggered by buttons) -->
+        <div
+          class="fixed inset-0 z-50 bg-surface-container-lowest/80 backdrop-blur-md hidden flex items-center justify-center p-gutter-mobile"
+          id="locale-spec-modal"
+        >
+          <div
+            class="bg-surface-container-high rounded-xl max-w-2xl w-full p-space-xl shadow-2xl relative flex flex-col gap-space-md"
+          >
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-space-sm">
+                <span
+                  class="material-symbols-outlined text-secondary text-headline-sm"
+                  >tune</span
+                >
+                <div class="flex flex-col">
+                  <span
+                    class="font-label-sm text-label-sm text-outline uppercase tracking-wider"
+                    >Multi-Lingual Compliance Manifest</span
+                  >
+                  <h3
+                    class="font-headline-sm text-headline-sm text-on-surface font-semibold"
+                    id="modal-product-title"
+                  >
+                    Localized Specs
+                  </h3>
+                </div>
+              </div>
+              <button
+                class="p-1 rounded bg-surface-container-highest hover:bg-surface-container text-on-surface transition-colors"
+                onclick="closeLocaleSpecModal()"
+              >
+                <span class="material-symbols-outlined text-headline-sm"
+                  >close</span
+                >
+              </button>
+            </div>
+            <div
+              class="flex items-center gap-space-xs bg-surface-container-lowest p-1 rounded-lg"
+              id="modal-lang-tabs"
+            >
+              <button
+                class="modal-tab active flex-1 py-1 rounded text-label-sm font-label-sm bg-primary-container text-on-primary-container font-semibold"
+                onclick="switchModalSpecLang('en', this)"
+              >
+                EN-US
+              </button>
+              <button
+                class="modal-tab flex-1 py-1 rounded text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface"
+                onclick="switchModalSpecLang('ja', this)"
+              >
+                JA-JP
+              </button>
+              <button
+                class="modal-tab flex-1 py-1 rounded text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface"
+                onclick="switchModalSpecLang('de', this)"
+              >
+                DE-DE
+              </button>
+              <button
+                class="modal-tab flex-1 py-1 rounded text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface"
+                onclick="switchModalSpecLang('fr', this)"
+              >
+                FR-FR
+              </button>
+              <button
+                class="modal-tab flex-1 py-1 rounded text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface"
+                onclick="switchModalSpecLang('ar', this)"
+              >
+                AR-SA
+              </button>
+            </div>
+            <div
+              class="bg-surface-container-lowest p-space-md rounded-lg flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface"
+            >
+              <div
+                class="flex justify-between py-1 border-b border-surface-container-highest"
+              >
+                <span class="text-outline">Voltage / 電圧 / Spannung:</span>
+                <span class="font-mono text-tertiary" id="spec-voltage"
+                  >100–240V AC 50/60Hz Universal</span
+                >
+              </div>
+              <div
+                class="flex justify-between py-1 border-b border-surface-container-highest"
+              >
+                <span class="text-outline">Compliance Badges:</span>
+                <span class="font-mono text-on-surface" id="spec-compliance"
+                  >FCC / CE RED / PSE / TELEC / RoHS</span
+                >
+              </div>
+              <div
+                class="flex justify-between py-1 border-b border-surface-container-highest"
+              >
+                <span class="text-outline">Official Packaging Script:</span>
+                <span class="text-secondary font-medium" id="spec-packaging"
+                  >Bilingual English / Japanese Hiragana &amp; Kanji</span
+                >
+              </div>
+              <div class="flex justify-between py-1">
+                <span class="text-outline">Recycling / WEEE Category:</span>
+                <span class="font-mono text-on-surface" id="spec-recycling"
+                  >WEEE-Reg.-Nr. DE 49201948</span
+                >
+              </div>
+            </div>
+            <div class="flex items-center justify-between pt-space-xs">
+              <span
+                class="font-label-sm text-label-sm text-tertiary flex items-center gap-1"
+              >
+                <span class="material-symbols-outlined text-label-md"
+                  >verified</span
+                >
+                Verified by Tokyo Localization Lab &amp; Berlin Compliance
+              </span>
+              <button
+                class="px-space-md py-1.5 bg-surface-container-highest hover:bg-surface-bright text-on-surface font-label-md text-label-md rounded"
+                onclick="closeLocaleSpecModal()"
+              >
+                Done
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Micro-interactions and Currency/Region Handling Script -->
+        <script>
+          let activeCurrency = "USD";
+          let currentRegion = "us";
+
+          function setCurrency(curr, btn) {
+            activeCurrency = curr;
+            document.querySelectorAll(".curr-btn").forEach((b) => {
+              b.classList.remove(
+                "active",
+                "bg-secondary-container",
+                "text-on-secondary-container",
+                "font-semibold",
+              );
+              b.classList.add("text-on-surface-variant");
+            });
+            btn.classList.add(
+              "active",
+              "bg-secondary-container",
+              "text-on-secondary-container",
+              "font-semibold",
+            );
+            btn.classList.remove("text-on-surface-variant");
+
+            // Update all prices in grid
+            document.querySelectorAll(".price-val").forEach((el) => {
+              const val = el.getAttribute(`data-${curr.toLowerCase()}`);
+              if (val) el.textContent = val;
+            });
+          }
+
+          function updateRegionalRules(region) {
+            currentRegion = region;
+            const routeText = document.getElementById("shipping-route-text");
+            const tariffText = document.getElementById("tariff-badge");
+            const taxSubtexts = document.querySelectorAll(".tax-subtext");
+
+            if (region === "eu") {
+              routeText.textContent =
+                "Rotterdam Bonded Port &rarr; Frankfurt Central Logistics (1-3 Days)";
+              tariffText.textContent = "Harmonized EU VAT (19% DE) Included";
+              tariffText.className =
+                "font-label-md text-label-md text-secondary font-semibold";
+              taxSubtexts.forEach((t) => (t.textContent = "incl. 19% MwSt."));
+            } else if (region === "jp") {
+              routeText.textContent =
+                "Tokyo Shinagawa Automated Fulfillment (Next-Day Tokyo/Kansai)";
+              tariffText.textContent =
+                "消費税 10% 内税 (Japan Domestic Direct)";
+              tariffText.className =
+                "font-label-md text-label-md text-tertiary font-semibold";
+              taxSubtexts.forEach(
+                (t) => (t.textContent = "税込 (Tax Included)"),
+              );
+            } else if (region === "gcc") {
+              routeText.textContent =
+                "Riyadh Air Cargo Express &rarr; Saudi National Hub (2-4 Days)";
+              tariffText.textContent = "GCC Custom Code 85.18 + 15% Zakat/VAT";
+              tariffText.className =
+                "font-label-md text-label-md text-primary font-semibold";
+              taxSubtexts.forEach((t) => (t.textContent = "excl. 15% VAT"));
+            } else {
+              routeText.textContent =
+                "Direct Hub: Tokyo Narita &rarr; San Francisco Int'l (2-4 Days)";
+              tariffText.textContent = "Duty-Exempt Electronics (HS 8518)";
+              tariffText.className =
+                "font-label-md text-label-md text-tertiary font-semibold";
+              taxSubtexts.forEach((t) => (t.textContent = "excl. state tax"));
+            }
+          }
+
+          function setLangFilter(lang, btn) {
+            document.querySelectorAll(".lang-chip").forEach((c) => {
+              c.classList.remove(
+                "active",
+                "bg-primary-container",
+                "text-on-primary-container",
+              );
+              c.classList.add(
+                "bg-surface-container",
+                "text-on-surface-variant",
+              );
+            });
+            btn.classList.add(
+              "active",
+              "bg-primary-container",
+              "text-on-primary-container",
+            );
+            btn.classList.remove(
+              "bg-surface-container",
+              "text-on-surface-variant",
+            );
+          }
+
+          function filterCategory(cat, btn) {
+            document.querySelectorAll(".cat-pill").forEach((p) => {
+              p.classList.remove(
+                "active",
+                "bg-primary-container",
+                "text-on-primary-container",
+              );
+              p.classList.add(
+                "bg-surface-container",
+                "text-on-surface-variant",
+              );
+            });
+            btn.classList.add(
+              "active",
+              "bg-primary-container",
+              "text-on-primary-container",
+            );
+            btn.classList.remove(
+              "bg-surface-container",
+              "text-on-surface-variant",
+            );
+
+            const cards = document.querySelectorAll(".product-card");
+            cards.forEach((c) => {
+              if (cat === "all" || c.getAttribute("data-category") === cat) {
+                c.style.display = "flex";
+              } else {
+                c.style.display = "none";
+              }
+            });
+          }
+
+          function handleSearch(val) {
+            const helper = document.getElementById("search-synonym-preview");
+            const text = document.getElementById("synonym-match-text");
+            if (val.trim().length > 1) {
+              helper.classList.remove("hidden");
+              text.textContent = `Cross-script synonym mapping for "${val}": Found in EN, JA, DE strings`;
+            } else {
+              helper.classList.add("hidden");
+            }
+          }
+
+          function toggleAllBilingual() {
+            const cards = document.querySelectorAll(".product-card");
+            cards.forEach((card) => {
+              card.classList.toggle("ring-1");
+              card.classList.toggle("ring-secondary");
+            });
+          }
+
+          function openLocaleSpecModal(title) {
+            document.getElementById("modal-product-title").textContent =
+              title + " — Regulatory & Spec Matrix";
+            document
+              .getElementById("locale-spec-modal")
+              .classList.remove("hidden");
+          }
+
+          function closeLocaleSpecModal() {
+            document
+              .getElementById("locale-spec-modal")
+              .classList.add("hidden");
+          }
+
+          function switchModalSpecLang(lang, btn) {
+            document.querySelectorAll(".modal-tab").forEach((t) => {
+              t.classList.remove(
+                "active",
+                "bg-primary-container",
+                "text-on-primary-container",
+                "font-semibold",
+              );
+              t.classList.add("text-on-surface-variant");
+            });
+            btn.classList.add(
+              "active",
+              "bg-primary-container",
+              "text-on-primary-container",
+              "font-semibold",
+            );
+            btn.classList.remove("text-on-surface-variant");
+
+            const pack = document.getElementById("spec-packaging");
+            if (lang === "ja") {
+              pack.textContent = "日本語表示法適合 / JIS規格準拠パッケージ";
+            } else if (lang === "de") {
+              pack.textContent =
+                "Verpackungsgesetz (VerpackG) & Grüner Punkt konform";
+            } else if (lang === "fr") {
+              pack.textContent =
+                "Notice bilingue Triman & Décret AGEC certifié";
+            } else if (lang === "ar") {
+              pack.textContent =
+                "دليل الاستخدام متوفر باللغة العربية مطابق لمواصفات SASO";
+            } else {
+              pack.textContent =
+                "Bilingual English / Japanese Hiragana & Kanji";
+            }
+          }
+        </script>
+      </div>
+    </main>
+    <footer
+      class="w-full bg-surface-container-lowest mt-auto shadow-[0_1px_8px_rgba(0,0,0,0.04)]"
+    >
+      <div
+        class="w-full px-gutter-mobile md:px-margin py-space-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-space-lg"
+      >
+        <div class="flex flex-col gap-space-xs">
+          <div class="flex items-center gap-space-sm">
+            <span
+              class="font-headline-sm text-headline-sm text-on-surface font-semibold"
+              >AURA</span
+            ><span
+              class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest"
+              >International Precision Platform</span
+            >
+          </div>
+          <p class="font-body-sm text-body-sm text-outline max-w-md">
+            Synchronized multi-script typographical baseline, localized currency
+            telemetry, and real-time cultural commerce architecture.
+          </p>
+        </div>
+        <div class="flex flex-wrap items-center gap-space-md">
+          <div class="flex items-center gap-space-xs">
+            <span
+              class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant mr-space-xs"
+              >Certified Standards</span
+            ><span
+              class="px-space-sm py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface"
+              >CE</span
+            ><span
+              class="px-space-sm py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface"
+              >FCC</span
+            ><span
+              class="px-space-sm py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface"
+              >PSE</span
+            ><span
+              class="px-space-sm py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface"
+              >UKCA</span
+            >
+          </div>
+          <div
+            class="flex items-center gap-space-xs bg-surface-container rounded-full px-space-md py-space-xs"
+          >
+            <span class="font-label-sm text-label-sm text-on-surface-variant"
+              >Active Engine:</span
+            ><span class="font-label-sm text-label-sm text-tertiary"
+              >v4.8 Multi-Lexicon</span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-full px-gutter-mobile md:px-margin py-space-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-outline"
+      >
+        <div class="flex items-center gap-space-md">
+          <span class="hover:text-on-surface cursor-pointer">🇺🇸 EN-US</span
+          ><span class="hover:text-on-surface cursor-pointer">🇯🇵 JA-JP</span
+          ><span class="hover:text-on-surface cursor-pointer">🇩🇪 DE-DE</span
+          ><span class="hover:text-on-surface cursor-pointer">🇫🇷 FR-FR</span
+          ><span class="hover:text-on-surface cursor-pointer">🇸🇦 AR-SA</span>
+        </div>
+        <div>
+          © 2025 AURA International Technologies Inc. All rights reserved across
+          all jurisdictions.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
