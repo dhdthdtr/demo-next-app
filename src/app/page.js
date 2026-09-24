@@ -10,40 +10,40 @@ export default function Home() {
   const [entry, setEntry] = useState(null);
   const [sub, setSub] = useState(null);
 
-  useEffect(() => {
-    ContentfulLivePreview.init({ 
-      locale: 'en-US', 
-      experimental: { hideCoveredElementOutlines: false },
-      enableLiveUpdates: true,
-      enableInspectorMode: true
-    });
+  // useEffect(() => {
+  //   ContentfulLivePreview.init({ 
+  //     locale: 'en-US', 
+  //     experimental: { hideCoveredElementOutlines: false },
+  //     enableLiveUpdates: true,
+  //     enableInspectorMode: true
+  //   });
 
-    contentfulClient
-      .getEntry('7jKfXoMun0IlrXDUtl1h40')
-      .then((data) => {
-        console.log(data)
-        setEntry(data);
-      })
-      .catch(console.error);
-  }, []);
+  //   contentfulClient
+  //     .getEntry('7jKfXoMun0IlrXDUtl1h40')
+  //     .then((data) => {
+  //       console.log(data)
+  //       setEntry(data);
+  //     })
+  //     .catch(console.error);
+  // }, []);
 
-  useEffect(() => {
-    contentfulClient
-      .getEntry('61wHmuSJPRUKaCn5pa6z6J')
-      .then((data) => {
-        console.log(data)
-        setSub(data);
-      })
-      .catch(console.error);
-  }, []);
+  // useEffect(() => {
+  //   contentfulClient
+  //     .getEntry('61wHmuSJPRUKaCn5pa6z6J')
+  //     .then((data) => {
+  //       console.log(data)
+  //       setSub(data);
+  //     })
+  //     .catch(console.error);
+  // }, []);
 
-  // 1. Live updates hook
-  const output = useContentfulLiveUpdates(entry);
-  const subOutput = useContentfulLiveUpdates(sub);
+  // // 1. Live updates hook
+  // const output = useContentfulLiveUpdates(entry);
+  // const subOutput = useContentfulLiveUpdates(sub);
 
-  // 2. Inspector mode hook
-  const inspectorProps = useContentfulInspectorMode({ entryId: output?.sys?.id });
-  const subInspectorProps = useContentfulInspectorMode({ entryId: subOutput?.sys?.id });
+  // // 2. Inspector mode hook
+  // const inspectorProps = useContentfulInspectorMode({ entryId: output?.sys?.id });
+  // const subInspectorProps = useContentfulInspectorMode({ entryId: subOutput?.sys?.id });
 
   return (
     <>
