@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@contentful/live-preview": "^4.10.20",
+    "@next/env": "^16.3.6",
     "contentful": "^11.12.10",
     "dotenv": "^18.0.3",
     "next": "16.3.5",
@@ -25,5 +26,10 @@
   },
   "allowScripts": {
     "unrs-resolver@1.12.2": true
+  },
+  "browser": {
+    "fs": false,
+    "os": false,
+    "path": false
   }
 }

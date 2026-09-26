@@ -10,46 +10,41 @@ export default function Home() {
   const [entry, setEntry] = useState(null);
   const [sub, setSub] = useState(null);
 
-  // useEffect(() => {
-  //   ContentfulLivePreview.init({ 
-  //     locale: 'en-US', 
-  //     experimental: { hideCoveredElementOutlines: false },
-  //     enableLiveUpdates: true,
-  //     enableInspectorMode: true
-  //   });
+  useEffect(() => {
+    ContentfulLivePreview.init({ 
+      locale: 'en-US', 
+      experimental: { hideCoveredElementOutlines: false },
+      enableLiveUpdates: true,
+      enableInspectorMode: true
+    });
 
-  //   contentfulClient
-  //     .getEntry('7jKfXoMun0IlrXDUtl1h40')
-  //     .then((data) => {
-  //       console.log(data)
-  //       setEntry(data);
-  //     })
-  //     .catch(console.error);
-  // }, []);
+    contentfulClient
+      .getEntry('5rrQBrYYj0LClVE9oC37QV')
+      .then((data) => {
+        console.log(data)
+        setEntry(data);
+      })
+      .catch(console.error);
+  }, []);
 
-  // useEffect(() => {
-  //   contentfulClient
-  //     .getEntry('61wHmuSJPRUKaCn5pa6z6J')
-  //     .then((data) => {
-  //       console.log(data)
-  //       setSub(data);
-  //     })
-  //     .catch(console.error);
-  // }, []);
-
-  // // 1. Live updates hook
-  // const output = useContentfulLiveUpdates(entry);
+  // 1. Live updates hook
+  const output = useContentfulLiveUpdates(entry);
   // const subOutput = useContentfulLiveUpdates(sub);
 
   // // 2. Inspector mode hook
-  // const inspectorProps = useContentfulInspectorMode({ entryId: output?.sys?.id });
+  const inspectorProps = useContentfulInspectorMode({ entryId: output?.sys?.id });
   // const subInspectorProps = useContentfulInspectorMode({ entryId: subOutput?.sys?.id });
 
   return (
     <>
+      <ContentfulLivePreviewProvider
+          locale="en-US"
+          enableInspectorMode={true}
+          enableLiveUpdates={true}
+        >
       <header
-      className="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"
-    >
+        className="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"
+      >
       <div
         className="h-20 w-full px-gutter-mobile md:px-margin flex items-center justify-between gap-space-md"
       >
@@ -205,8 +200,9 @@ export default function Home() {
               </div>
               <h1
                 className="font-display-hero text-display-hero md:text-display-hero text-on-surface tracking-tight leading-none mt-space-xs"
+                {...inspectorProps({ fieldId: 'heroTitle' })}
               >
-                Crafted for the Global Everyday
+                {output?.fields?.heroTitle}
               </h1>
               <div
                 className="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs max-w-4xl"
@@ -246,20 +242,6 @@ export default function Home() {
                 data-category="audio"
               >
                 <div
-                  className="absolute top-space-md left-space-md z-20 flex flex-wrap items-center gap-space-xs"
-                >
-                  <span
-                    className="px-space-sm py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-semibold tracking-wider uppercase"
-                    >Global Best-Seller</span
-                  >
-                </div>
-                <div className="absolute top-space-md right-space-md z-20">
-                  <span
-                    className="font-label-sm text-label-sm bg-surface-container-highest/90 text-secondary px-space-xs py-0.5 rounded font-mono"
-                    >100V-240V Multi-Plug</span
-                  >
-                </div>
-                <div
                   className="relative w-full h-72 bg-surface-container-lowest overflow-hidden flex items-center justify-center p-space-md"
                 >
                   <Image
@@ -280,8 +262,7 @@ export default function Home() {
                     <div className="flex items-center justify-between">
                       <span
                         className="font-label-sm text-label-sm text-secondary tracking-widest uppercase font-mono"
-                        >SKU-AURA-PLS-01</span
-                      >
+                        >SKU-AURA-PLS-01</span>
                       <div className="flex items-center gap-1">
                         <span
                           className="w-2 h-2 rounded-full bg-tertiary"
@@ -333,18 +314,12 @@ export default function Home() {
                             data-jpy="¥52,000"
                             data-sar="﷼1,310"
                             data-usd="$349"
-                            >$349</span
-                          >
-                          <span
-                            className="font-label-sm text-label-sm text-outline tax-subtext"
-                            >excl. state tax</span
-                          >
+                            >$349</span>
                         </div>
                       </div>
                       <span
                         className="px-space-sm py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant"
-                        >Low Latency 14ms</span
-                      >
+                        >Low Latency 14ms</span>
                     </div>
                     <div className="flex items-center gap-space-sm">
                       <button
@@ -1143,6 +1118,7 @@ export default function Home() {
         </div>
       </div>
     </footer>
+    </ContentfulLivePreviewProvider>
     </>
   );
 }
