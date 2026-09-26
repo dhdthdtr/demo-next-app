@@ -212,8 +212,9 @@ export default function Home() {
                 >
                   <p
                     className="font-body-md text-body-md text-on-surface-variant leading-snug"
+                    {...inspectorProps({ fieldId: 'heroDescription' })}
                   >
-                    Design that enriches everyday life around the world. A harmony of sound and light, honed to perfection.
+                    {output?.fields?.heroDescription}
                   </p>
                 </div>
               </div>
