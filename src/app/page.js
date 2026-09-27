@@ -17,7 +17,8 @@ export default function Home() {
       locale: 'en-US', 
       experimental: { hideCoveredElementOutlines: false },
       enableLiveUpdates: true,
-      enableInspectorMode: true
+      enableInspectorMode: true,
+      targetOrigin: 'https://app.contentful.com',
     });
 
     const fetchPage = async () => {
