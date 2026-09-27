@@ -51,6 +51,8 @@ export default function Home() {
           locale="en-US"
           enableInspectorMode={true}
           enableLiveUpdates={true}
+          targetOrigin="https://app.contentful.com"
+          debugMode={true}
         >
       <header
         className="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"
