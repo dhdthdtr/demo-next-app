@@ -49,7 +49,7 @@ export default function Home() {
     <>
       <ContentfulLivePreviewProvider
           locale="en-US"
-          enableInspectorMode={true}
+          enableInspectorMode={false}
           enableLiveUpdates={true}
           targetOrigin="https://app.contentful.com"
           debugMode={true}
