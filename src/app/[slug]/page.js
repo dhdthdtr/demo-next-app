@@ -101,6 +101,28 @@ export default function Page({ params, searchParams }) {
                       </div>
                     </div>
                   </div>
+                  <div className="flex flex-col gap-space-xs">
+                    <div className="flex items-center justify-between">
+                      <span className="font-label-sm text-label-sm text-outline uppercase tracking-wider">
+                        Core Acoustic Capabilities
+                      </span>
+                    </div>
+                    {output?.fields?.capabilities && 
+                        <ul
+                            className="flex flex-col gap-space-xs"
+                            id="benefits-list"
+                            {...inspectorProps({ fieldId: 'capabilities' })}
+                        >
+                            <li className="bg-surface-container-high/50 p-space-sm rounded text-body-sm flex items-start gap-space-sm group relative">
+                                <div className="flex-1 flex flex-col">
+                                <span className="text-on-surface font-medium text-benefit-1">
+                                    {output?.fields?.capabilities[0]}
+                                </span>
+                                </div>
+                            </li>
+                        </ul>
+                    }
+                  </div>
 
                   <div className="flex flex-col sm:flex-row items-stretch gap-space-sm pt-space-xs">
                     <button className="flex-1 bg-primary-container hover:bg-[#4338ca] text-on-primary font-label-lg text-label-lg py-3 px-space-md rounded flex items-center justify-center gap-space-sm shadow-[0_0_20px_rgba(79,70,229,0.35)] transition-all font-semibold active:scale-[0.98]">
