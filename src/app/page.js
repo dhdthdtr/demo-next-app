@@ -12,15 +12,15 @@ export default function Home() {
   const [products, setProducts] = useState([]);
   const [productList, setProductList] = useState(null);
 
-  useEffect(() => {
-    ContentfulLivePreview.init({ 
-      locale: 'en-US', 
-      experimental: { hideCoveredElementOutlines: false },
-      enableLiveUpdates: true,
-      enableInspectorMode: true,
-      targetOrigin: 'https://app.contentful.com',
-    });
+  ContentfulLivePreview.init({ 
+    locale: 'en-US', 
+    experimental: { hideCoveredElementOutlines: false },
+    enableLiveUpdates: true,
+    enableInspectorMode: true,
+    targetOrigin: 'https://app.contentful.com',
+  });
 
+  useEffect(() => {
     const fetchPage = async () => {
       const response = await contentfulClient.getEntry('5rrQBrYYj0LClVE9oC37QV')
       setEntry(response)
