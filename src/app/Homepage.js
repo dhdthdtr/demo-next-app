@@ -16,14 +16,11 @@ export default function Homepage({products, output, list, entry}) {
                 height={32}
                 alt="AURA Global Logo"
                 className="h-8 w-auto object-contain"
-                src="https://lh3.googleusercontent.com/aida/AEtjO1XrdoPibmxagOBilta1p8bUqREQhjy5V87aN5Bb2Ax9CGUFxWbbuwr_2cBiR_Sw--iOSxjTRrXWs0azMToTliMuBSCOa7wiUhGp3unxiCCEy80AfvXinYtd6OeiWkR9hAxJQm5TOF95cQ4ncX1Ii1QaHGe7b7Sb3dFh9eZSIXGbr5hb_y04oOf3qwNUF9tB9oOdTCizyzcFQr5h4gZnx_xZ-dtorKkfSVOIGqwTIN5WHJxy-NIj3XHlFKDD"
+                src="/logo.png"
               />
               <div className="flex flex-col">
                 <span className="font-headline-sm text-headline-sm tracking-tight text-on-surface font-semibold">
-                  AURA
-                </span>
-                <span className="font-label-sm text-label-sm tracking-widest uppercase text-on-surface-variant">
-                  Global Intl
+                  Samsung SDS
                 </span>
               </div>
             </div>
@@ -95,20 +92,12 @@ export default function Homepage({products, output, list, entry}) {
                 type="text"
               />
             </div>
-            <div className="relative flex items-center justify-center cursor-pointer p-space-xs text-on-surface-variant hover:text-on-surface transition-colors">
-              <span className="material-symbols-outlined text-headline-sm">
-                notifications
-              </span>
-              <span className="absolute -top-1 -right-1 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-space-xs rounded-full min-w-[1.125rem] text-center">
-                3
-              </span>
-            </div>
             <div className="flex items-center gap-space-sm pl-space-xs">
               <div className="relative">
                 <Image
                   alt="Profile"
                   className="w-8 h-8 rounded-full object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt4Zha9Baxtu72MXnbxU4KRBvN4k3ubQYvzbM33H6i65L5brUBO4Sa7F_DHGFMfAPYS1wtZtfcU2AsrggFemAU2yMa1202zLvlpnsltjZDaE7VoFFavPEo_jptxa-G0iP8IX_KgR_lFuq1kIldLQMa1KmCDojwD5iIb65MV1TkGoBH3CJxbOS0nuG7tVj41SkhAM6_UKokw3ZeVsMb6amCHMr2IPyB7_M0uV5fgTWNHHut8PCb7oXEWQ"
+                  src="/avatar.jpeg"
                   width={32}
                   height={32}
                 />
@@ -116,10 +105,10 @@ export default function Homepage({products, output, list, entry}) {
               </div>
               <div className="hidden md:flex flex-col">
                 <span className="font-label-md text-label-md text-on-surface leading-tight">
-                  Elena Rostova
+                  Nguyen Vu Bang
                 </span>
                 <span className="font-label-sm text-label-sm text-secondary tracking-wide">
-                  Lead Localizer
+                  Contentful Developer
                 </span>
               </div>
             </div>

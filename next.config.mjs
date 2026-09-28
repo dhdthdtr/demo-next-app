@@ -14,7 +14,7 @@ const nextConfig = {
         hostname: 'images.ctfassets.net',
         port: '',
         pathname: '/**',
-      },
+      }
     ],
   },
   reactCompiler: true,

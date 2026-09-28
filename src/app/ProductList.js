@@ -5,7 +5,7 @@ export default function ProductList ({id, data}) {
     console.log(data)
     return (
         <>
-            <Link href={`/${data.slug}?id=${id}`}>
+            <Link href={`/${data.slug}?id=${id}&img=${data.images[0].fields.file.url}`}>
                 <article
                     className="product-card group relative flex flex-col bg-surface-container rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
                     data-category="audio"

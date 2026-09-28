@@ -58,7 +58,7 @@ export default function Page({ params, searchParams }) {
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       alt="Photorealistic studio shot of the AURA Pulse One flagship spatial headphones resting on an architectural dark slate pedestal. Sculpted matte aluminum earcups, plush memory foam acoustic dampers, and illuminated dynamic frequency mesh. Sleek, minimalist Japanese-Nordic design ethos with subtle indigo and cyan edge lighting against deep charcoal space."
                       id="main-product-img"
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkvhiQQrq_pI6Khu2zxo-XrityxSdySocN_9fwCVQVnA4gWxzMOn0aEvL6mfK5KWTXBijhuFjaPsPQUiFTWY4TgeEaF-_5Hh3qqVz5UHnp5zzhXGckHRPfd-8cKPodZdKuTZGvdFaiXbInYhomdKBozHFkVgs-H9Qqr7QWkzzd2HG31cHXNHponr0poRzg7_cXuNFEL6o3g9cG8H66H78bOweyftt68IH3rDWUMq6dKY2MwVSeFOsMOg"
+                      src={`https:${searchData.img}`}
                       width={600}
                       height={600}
                     />
