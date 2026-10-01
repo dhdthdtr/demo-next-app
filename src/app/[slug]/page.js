@@ -10,11 +10,15 @@ import {
 } from "@contentful/live-preview/react";
 import { ContentfulLivePreview } from "@contentful/live-preview";
 
-export default function Page({ params, searchParams }) {
-  const searchData = use(searchParams);
+export default function Page({ params }) {
   const [item, setItem] = useState(null);
+  const [data, setData] = useState({});
   const [capabilities, setCapabilities] = useState([]);
+  // const searchData = JSON.parse(sessionStorage.getItem("productData"));
   useEffect(() => {
+    const searchData = JSON.parse(sessionStorage.getItem("productData"));
+    setData(searchData);
+    console.log(searchData)
     ContentfulLivePreview.init({
       locale: "en-US",
       experimental: { hideCoveredElementOutlines: false },
@@ -23,7 +27,6 @@ export default function Page({ params, searchParams }) {
     });
     const fetchEntry = async () => {
       const entry = await contentfulClient.getEntry(searchData.id);
-      console.log(entry)
       setItem(entry);
       setCapabilities(entry?.fields?.capabilities);
     };
@@ -53,15 +56,18 @@ export default function Page({ params, searchParams }) {
                 <div className="lg:col-span-7 flex flex-col gap-space-md">
                   <div className="relative w-full aspect-[4/3] rounded-xl bg-surface-container-lowest overflow-hidden shadow-xl flex items-center justify-center group">
                     <div className="absolute inset-0 bg-gradient-to-tr from-primary-container/20 via-transparent to-secondary-container/10 pointer-events-none"></div>
-
-                    <Image
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                      alt="Photorealistic studio shot of the AURA Pulse One flagship spatial headphones resting on an architectural dark slate pedestal. Sculpted matte aluminum earcups, plush memory foam acoustic dampers, and illuminated dynamic frequency mesh. Sleek, minimalist Japanese-Nordic design ethos with subtle indigo and cyan edge lighting against deep charcoal space."
-                      id="main-product-img"
-                      src={`https:${searchData.img}`}
-                      width={600}
-                      height={600}
-                    />
+                    {data?.img ? (
+                      <Image
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        alt="Product shot"
+                        id="main-product-img"
+                        src={data.img.startsWith("//") ? `https:${data.img}` : data.img}
+                        width={600}
+                        height={600}
+                      />
+                    ) : (
+                      <div className="text-on-surface-variant">Loading image...</div>
+                    )}
                   </div>
                 </div>
 

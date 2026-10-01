@@ -4,24 +4,26 @@ import Image from "next/image";
 import { ContentfulLivePreview } from '@contentful/live-preview';
 import { ContentfulLivePreviewProvider, useContentfulLiveUpdates, useContentfulInspectorMode  } from '@contentful/live-preview/react';
 import { CMA_Client, contentfulClient } from './contentful';
-import { useEffect, useState } from 'react';
+import { use, useEffect, useState } from 'react';
 import ProductList from "./ProductList";
 import Homepage from "./Homepage";
 
 export default function Home() {
   const [entry, setEntry] = useState(null);
+  const [lang, setLang] = useState("en-US")
   const [products, setProducts] = useState([]);
   const [productList, setProductList] = useState(null);
 
-  ContentfulLivePreview.init({ 
-    locale: 'en-US', 
-    experimental: { hideCoveredElementOutlines: false },
-    enableLiveUpdates: true,
-    enableInspectorMode: true,
-    targetOrigin: 'https://app.contentful.com',
-  });
-
   useEffect(() => {
+    ContentfulLivePreview.init({ 
+      locale: 'ko-KR', 
+      experimental: { hideCoveredElementOutlines: false },
+      enableLiveUpdates: true,
+      enableInspectorMode: true,
+      targetOrigin: 'https://app.contentful.com',
+    });
+
+
     const fetchPage = async () => {
       const response = await contentfulClient.getEntry('5rrQBrYYj0LClVE9oC37QV')
       setEntry(response)
@@ -41,10 +43,6 @@ export default function Home() {
   // 1. Live updates hook
   const output = useContentfulLiveUpdates(entry);
   const list = useContentfulLiveUpdates(productList);
-
-  // 2. Inspector mode hook
-  const inspectorProps = useContentfulInspectorMode({ entryId: output?.sys?.id });
-  const listInspectorProps = useContentfulInspectorMode({ entryId: list?.sys?.id });
 
   return (
     <>

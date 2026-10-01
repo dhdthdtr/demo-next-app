@@ -24,34 +24,6 @@ export default function Homepage({products, output, list, entry}) {
                 </span>
               </div>
             </div>
-            <div className="hidden lg:flex items-center bg-surface-container-high rounded-full px-space-md py-space-xs gap-space-sm shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
-              <div className="flex items-center gap-space-xs cursor-pointer">
-                <span className="text-body-md">🇺🇸</span>
-                <span className="font-label-md text-label-md text-on-surface">
-                  English (US)
-                </span>
-                <span className="material-symbols-outlined text-label-md text-outline">
-                  expand_more
-                </span>
-              </div>
-              <span className="text-outline-variant font-body-sm text-body-sm">
-                /
-              </span>
-              <div className="flex items-center gap-space-xs cursor-pointer font-label-md text-label-md text-secondary">
-                <span className="font-Noto Sans">USD $</span>
-                <span className="material-symbols-outlined text-label-md text-outline">
-                  unfold_more
-                </span>
-              </div>
-              <div className="flex items-center gap-space-xs bg-surface-container-highest px-space-sm py-0.5 rounded-full cursor-pointer">
-                <span className="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">
-                  LTR
-                </span>
-                <span className="material-symbols-outlined text-label-sm text-outline">
-                  swap_horiz
-                </span>
-              </div>
-            </div>
             <nav
               className="hidden xl:flex items-center gap-space-sm"
               data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-[0_0_20px_rgba(79,70,229,0.35)]"
